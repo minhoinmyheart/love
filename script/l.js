@@ -37,7 +37,7 @@ function init() {
 
 
   function drawFirstText(ctx, canvas) {
-    ctx.font = "60px Comic Sans MS"; // Устанавливаем шрифт и размер
+    ctx.font = mobile ? "20px Comic Sans MS" : "60px Comic Sans MS"; // Устанавливаем шрифт и размер
     ctx.fillStyle = "#f82145"; // Устанавливаем цвет текста
     ctx.textAlign = "center"; // Выравнивание по центру
     ctx.fillText("С днем Святого Валентина, солнце", canvas.width / 2, canvas.height / 2.2); // Рисуем текст

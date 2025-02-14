@@ -40,7 +40,7 @@ function init() {
     ctx.font = "60px Comic Sans MS"; // Устанавливаем шрифт и размер
     ctx.fillStyle = "#f82145"; // Устанавливаем цвет текста
     ctx.textAlign = "center"; // Выравнивание по центру
-    ctx.fillText("С днем Святого Валентина, солнце", canvas.width / 2, canvas.height / 2.2 - 500); // Рисуем текст
+    ctx.fillText("С днем Святого Валентина, солнце", canvas.width / 2, canvas.height / 2.2); // Рисуем текст
   }
 
   function drawSecondText(ctx, canvas) {

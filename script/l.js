@@ -197,6 +197,7 @@ function drawFText(ctx, canvas) {
 
   loop();
 }
+window.addEventListener('resize', init);
 document.addEventListener("DOMContentLoaded", function () {
   init();
 

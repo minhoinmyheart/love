@@ -37,10 +37,10 @@ function init() {
 
 
   function drawFirstText(ctx, canvas) {
-    ctx.font = mobile ? "12px Comic Sans MS" : "60px Comic Sans MS"; // Устанавливаем шрифт и размер
+    ctx.font = "60px Comic Sans MS"; // Устанавливаем шрифт и размер
     ctx.fillStyle = "#f82145"; // Устанавливаем цвет текста
     ctx.textAlign = "center"; // Выравнивание по центру
-    ctx.fillText("С днем Святого Валентина, солнце", canvas.width / 2, canvas.height / 2.2); // Рисуем текст
+    ctx.fillText("С днем Святого Валентина, солнце", canvas.width / 2, canvas.height / 2.2 - 500); // Рисуем текст
   }
 
   function drawSecondText(ctx, canvas) {
@@ -105,13 +105,13 @@ function drawFText(ctx, canvas) {
   var pointsOrigin = [];
   var dr = mobile ? 0.3 : 0.1;
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 310, 19, 0, 0));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 310, 19, 0, 200));
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 250, 15, 0, 0));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 250, 15, 0, 200));
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 190, 11, 0, 0));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 190, 11, 0, 200));
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 130, 7, 0, 0));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 130, 7, 0, 200));
 
   var heartPointsCount = pointsOrigin.length;
   var targetPoints = [];
@@ -197,7 +197,6 @@ function drawFText(ctx, canvas) {
 
   loop();
 }
-window.addEventListener('resize', init);
 document.addEventListener("DOMContentLoaded", function () {
   init();
 

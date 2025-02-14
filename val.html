@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/l.css">
 </head>
 <body>
-  <canvas id="heart"></canvas>
+  <canvas id="heart" width="800" height="600"></canvas>
   <script src="script/l.js"></script>
 </body>
 </html>

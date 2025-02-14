@@ -105,13 +105,13 @@ function drawFText(ctx, canvas) {
   var pointsOrigin = [];
   var dr = mobile ? 0.3 : 0.1;
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 310, 19, 0, 200));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 310, 19, 0, 0));
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 250, 15, 0, 200));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 250, 15, 0, 0));
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 190, 11, 0, 200));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 190, 11, 0, 0));
   for (var i = 0; i < Math.PI * 2; i += dr)
-    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 130, 7, 0, 200));
+    pointsOrigin.push(scaleAndTranslate(heartPosition(i), 130, 7, 0, 0));
 
   var heartPointsCount = pointsOrigin.length;
   var targetPoints = [];
